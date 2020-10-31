@@ -2,7 +2,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import pandas as pd
 
-driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\drivers\chromedriver.exe')
+driver = webdriver.Chrome('C:\Path\to\chromedriver.exe')
 products = []
 prices = []
 ratings = []
@@ -44,12 +44,5 @@ df.to_excel('output.xlsx')
 
 
 
-#test code for selenium
-# driver.get('https://www.google.com')
-# time.sleep(5)
-# search_box = driver.find_element_by_name('q')
-# search_box.send_keys('ChromeDriver')
-# search_box.submit()
-# time.sleep(5)
-# driver.quit()
+
 
